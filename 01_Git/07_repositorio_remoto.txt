@@ -1,0 +1,21 @@
+Para enviar todo o versionamento (as snapshots) feito até agora para a nuvem do GitHub, precisamos fazer um Push para "empurrar" as informações para a branch remota.
+
+Para vermos quais as branches remotas, utilizamos o comando:
+    git remote
+
+Para enviar o versionamento local feito para o versionamento remoto, utilizamos o comando:
+    git push brachRemota branchLocal
+
+E para trazer modificações do repositório remoto para o local? Utilizamos o comando:
+    git pull
+    = puxa todas as modificações remotas e já dá um merge (mescla) com as modificações locais.
+
+Uma alternativa para não mesclar logo de primeira os arquivos sob cautela de erros de mesclagem é:
+    git fetch
+    = faz download das modificações remotas mas não as mescla
+
+    git diff branchRemota/branchLocal
+    = mostra as diferenças puxadas do repositório remotamente
+
+    git pull
+    = agora sim as modificações do fetch serão dadas um merge (serão mescladas)

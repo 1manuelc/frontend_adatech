@@ -1,0 +1,4 @@
+Para unir uma ramificação com outra, utilizamos a mescla (merge):
+    git merge nomeDaBranch
+    = vale lembrar que a branch "nomeDaBranch" vai ser trazida á branch atual da HEAD, então deve-se tomar cuidado ao unir para que não hajam conflitos.
+    Caso houverem, é necessário resolvê-los de forma individual por arquivo.

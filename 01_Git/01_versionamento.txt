@@ -1,0 +1,10 @@
+Versionamento - Conceito:
+    Registro de mudanças em arquivos, possibilitando recuperação ou acesso a versões anteriores.
+    Também possibilita desenvolvimento de código em colaboração com outros integrantes em trilhas iguais ou diferentes, com ou sem união.
+
+O que é Git?
+    É um sistema de versionamento de código, que guarda os registros de versão como snapshots (fotos) de estado do projeto, além de referências para essa foto.
+
+Ps: Git se torna bem mais rápido por conta das operações serem majoritariamente feitas em disco, utilizando funções remotas em menor parte do tempo.
+
+Curiosidade: Git cria snapshots do código utilizando Hash, isto é, uma estrutura de dados capaz de organizar o versionamento por uma chave única para cada "foto" guardada.

@@ -1,0 +1,17 @@
+Para ver intuitivamente quais os últimos commits feitos, não podemos usar o "git diff" porque se trata de snapshots já feitos, não de diferenças em código. Sendo assim, utilizamos o comando:
+    git log
+
+E para desfazer mudanças já feitas? Temos duas possibilidades:
+    01. Se as mudanças ainda estiverem no estado Unmodified:
+        git restore ./nomearquivo
+        = restaura um arquivo para o último snapshot Unmodified
+
+        git restore .
+        = restaura todos os arquivos do diretório e subdiretório para o último snapshot Unmodified.
+
+    02. Se as mudanças já estiverem no estado Staged:
+        git restore --staged ./nomearquivo
+        = mesma lógica do anterior
+
+        git restore --staged .
+        = mesma lógica do anterior

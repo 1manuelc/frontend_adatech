@@ -1,0 +1,46 @@
+Estados de Modificação no Git
+
+O git possui 4 estados de modificação, que demonstram quais alterações vão ou não ser adicionadas ao commit e posteriormente ao repositório remoto, sendo eles:
+
+        Untracked - Unmodified - Modified - Staged
+
+(não existe uma ordem fixa de movimentação dos estados, depende das operações executadas).
+
+Untracked: (não rastreado)
+    Engloba os arquivos não adicionados ao versionamento ainda, e também os excluídos.
+
+Unmodified: (não modificado, mas já rastreado)
+    Abrange as modificações já enviadas para o versionamento e ainda não alteradas.
+
+Modified: (modificado)
+    Arquivos que contém modificação, ou seja, diferem dos registros enviados ao versionamento por último.
+
+Staged: (pronto)
+    Forma uma lista de arquivos prontos para serem enviados ao repositório e dados como unmodified para o versionamento (se tornam unmodified após o commit).
+
+Para checar o status atual do repositório, é necessário executar o comando:
+    git status
+
+Para adicionar modificações ao versionamento, usa-se os comandos:
+    git add ./nomearquivo
+    = coloca o arquivo citado no stage
+    
+    git add .                           
+    = coloca arquivos no stage (diretório atual e subdiretórios)
+
+    git add --all
+    = coloca todos os arquivos (novos, modificados e removidos) no stage
+
+
+Movimentações corriqueiras no git:
+    Adicionar um arquivo novo:
+        - Untracked -> Staged
+    
+    Remover um arquivo do versionamento
+        - Unmodified -> Untracked
+    
+    Editar um arquivo e dar como pronto:
+        - Unmodified -> Modified -> Staged
+
+    Commitar um arquivo:
+        - Staged -> Unmodified

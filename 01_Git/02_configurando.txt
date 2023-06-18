@@ -1,0 +1,14 @@
+Para instalar o git, basta pesquisar "Git" no navegador e baixar seu instalador conforme SO e arquitetura desejada. 
+
+Essa instalação se trata do sistema em si, mas você também pode instalar ferramentas gráficas para utilizar o Git, como o "GitHub Desktop" que inclui os principais comandos em uma interface gráfica intuitiva e altamente produtiva.
+
+Para testar se a instalação do Git foi bem sucedida, basta abrir o prompt de comando e consultar sua versão instalada:
+    git --version
+
+Se retornar algo diferente de uma versão do programa, é porque a instalação foi mal-sucedida.
+
+Recomenda-se usar o git com o editor de texto Visual Studio Code, ou VSCode, e ainda é possível desfrutar de todas as informações possíveis sobre o versionamento do repositório utilizando a Extensão "GitLens".
+
+Como configuração inicial para o git na sua máquina, é importante definir um nome de usuário e seu email correspondente para serem atrelados aos commits e repositórios locais por meio dos comandos:
+    git config --global user.name "seu_username"
+    git config --global user.email seu_email@gmail.com

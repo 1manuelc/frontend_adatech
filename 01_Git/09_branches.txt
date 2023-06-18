@@ -1,0 +1,15 @@
+Branches são ramificações de um código, como se fossem snapshots em linha do tempo, mas separadas.
+
+Se tornam bastante úteis quando falamos de desenvolvimento em time, quando diferentes partes do código ficam na responsabilidade de diferentes pessoas, tornando a localização e manutenção dos trechos específicos fácil.
+
+Para criar uma ramificação nova, utilizamos o comando:
+    git branch nomeDaBranch
+
+Para navegar entre branches:
+    git checkout nomeDaBranch
+
+Para visualizar melhor as modificações dentro de uma branch:
+    git log --oneline --decorate
+
+Observação:
+    O ponteiro HEAD descrito no "git log" evidencia em que branch estamos no momento da consulta.

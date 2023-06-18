@@ -1,0 +1,20 @@
+Como inicializar um repositório na minha máquina e começar a desenvolver nele?
+Duas formas:
+    01. Clonar um repositório já existente remotamente.
+    02. Criar um repositório localmente e compartilhá-lo remotamente.
+
+01. Clonando repositórios:
+    Para clonar um repositório já existente, é preciso ter seu endereço HTTPS que é encontrado no botão verde "Code" no repositório.
+
+    Estando no diretório desejado para clonar o repositório (pasta que vai conter o clone) usando os comandos básicos de diretório (cd), é possível clonar o repositório remoto através do comando:
+        git clone https://github.com/1manuelc/IFCE_estudos.git
+    
+    Detalhe: pasta .git dentro dos repositórios armazena informações essenciais sobre o versionamento prévio á clonagem, mas somente pode ser vista com opção para "ver diretórios ocultos".
+
+02. Criando repositórios:
+    Para incluir a pasta .git que é a base para o versionamento, precisamos estar no terminal dentro da pasta desejada para versionamento e digitar o comando:
+    git init
+
+A partir disso, é criada a pasta-base para o versionamento.
+
+

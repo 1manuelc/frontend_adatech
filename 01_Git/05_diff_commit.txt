@@ -1,0 +1,11 @@
+Para visualizarmos as adições/remoções de caracteres e linhas em código de forma fácil e limpa utilizamos o comando:
+    git diff
+
+    Vale lembrar que o diff só mostra a diferença entre os arquivos de estado Modified e Unmodified, para ver a diferença entre arquivos de estado Staged e Unmodified é preciso usar uma flag.
+    git diff --staged
+
+
+Para salvar um estado, isto é, criar uma snapshot (foto) do estado atual do versionamento, precisamos fazer um commit para empacotar as mudanças, além de tornar o estado dos arquivos de Staged para Unmodified.
+    git commit -m "sua mensagem aqui"
+
+    A flag -m seguida de aspas duplas com abertura e fechamento define um título para o commit, onde podemos resumir em poucos caracteres o que foi mudado para fins de organização.
