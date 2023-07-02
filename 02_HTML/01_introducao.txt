@@ -1,0 +1,19 @@
+HTML é uma das ferramentas presentes no Front-End, a parte visual de todo site na Web. 
+
+Juntamente com CSS (Linguagem de Estilização) e JavaScript (Linguagem de Programação), o HTML (que é uma Linguagem de Marcação) define o layout básico das páginas para logo serem estilizadas e tornadas dinâmicas e objetivas.
+
+HTML = HyperText Markup Language (linguagem de marcação de hipertexto).
+
+Mas o que seria um hipertexto?
+    A semiótica o define como um texto que contém referências navegáveis para outros textos, diferentemente do texto comum que tem o único propósito de informar.
+
+E marcação?
+    O termo evidencia o início e fim de um atributo ou propriedade, o que é facilmente visto na linguagem através de delimitações usando caracteres específicos.
+    
+    Linguagens de marcação usam esses caracteres para pressupor metainformações, que se referem dentro do código à:
+        - forma
+        - hierarquia
+        - ordem
+        - ou semântica
+
+Atualmente a linguagem HTML está na versão 5, de 2014.
