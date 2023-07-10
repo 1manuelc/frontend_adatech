@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tags de Formatação de Texto</title>
+	</head>
+	<body>
+		<h1>Tags de Formatação de Texto</h1>
+		<hr />
+
+		<h3>Tag "b" ~ negrito</h3> <!-- bold/negrito, estilização -->
+		<b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit.
+		<br>
+		<p>(Essa tag faz a marcação inline de um texto em negrito, mas sem efeito semântico algum, somente estilização sem uso de CSS)</p>
+
+
+		<h3>Tag "strong" ~ negrito SEO</h3> <!-- strong/forte, ênfase no SEO -->
+		<strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit.
+		<br>
+		<p>(Tem a mesma estilização da tag <code>b</code>, mas na semântica difere por atribuir o texto marcado ao SEO do motor de pesquisa para facilitar na busca)</p>
+
+
+		<h3>Tag "i" ~ itálico</h3> <!-- italic/itálico, estilização -->
+		Lorem ipsum dolor <i>sit amet</i> consectetur adipisicing elit.
+		<br>
+		<p>(Estilização inline de texto para itálico)</p>
+
+
+		<h3>Tag "em" ~ itálico SEO</h3> <!-- emphasis/ênfase, uso no SEO -->
+		Lorem ipsum dolor <i>sit amet</i> consectetur adipisicing elit.
+		<br>
+		<p>(Mesma linha de raciocínio da tag <code>strong</code>, mas com o itálico)</p>
+
+
+		<h3>Tag "u" ~ sublinhado depreciado</h3> <!-- underline/sublinhado, não recomendada -->
+		Lorem ipsum dolor <u>sit amet</u> consectetur adipisicing elit.
+		<br>
+		<p>(Sublinha o texto marcado inline, não recomendada por estar depreciada em relação ao estilo CSS <code>text-decoration</code> com propriedade <code>underline</code>)</p>
+
+
+		<h3>Tag "s" ~ riscado</h3> <!-- stratched/riscado -->
+		Lorem ipsum dolor sit amet <s>consectetur adipisicing</s> elit.
+		<br>
+		<p>(Risca o texto marcado com uma linha no centro)</p>
+
+
+		<h3>Tag "mark" ~ "marca-texto"</h3> <!-- marked/marcado -->
+		Lorem ipsum dolor sit amet <mark>consectetur adipisicing</mark> elit.
+		<br>
+		<p>(Risca o texto marcado com marca-texto)</p>
+
+
+		<h3>Tag "pre" ~ bloco pré-formatado</h3> <!-- pre-formatted/pré-formatado -->
+		Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		<pre>
+public static void main() {
+System.out.println("Hello World!");
+}
+</pre>
+		<p>(Exibe texto multiline formatado dentro de bloco de código, como se fosse um <code>code</code> que leva em conta toda a formatação na escrita do documento, diferentemente das outras tags que ignoram enters e espaços.)</p>
+
+
+		<h3>Tag "code" ~ código inline</h3> <!-- code/código -->
+		<pre>
+public static void main() {
+System.out.println("Hello World!");
+}
+</pre>
+		<p>A função <code>println()</code> exibe uma sequência de caracteres formatada na saída padrão</p>
+		<p>(Exibe uma formatação inline com fonte monoespaçada, referindo-se á um elemento de programação)</p>
+
+
+		<h3>Tag "blockquote" ~ citação em bloco</h3> <!-- block quote/citação em bloco -->
+		<blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit".</blockquote>
+		<p>(Exibe um bloco contendo uma citação recuada á direita)</p>
+
+
+		<h3>Tag "sup" ~ texto sobrescrito</h3> <!-- superscript/sobrescrito -->
+		<p>2<sup>6</sup> = 64</p>
+		<p>(Exibe um caractere sobrescrito/acima)</p>
+
+
+		<h3>Tag "sub" ~ texto subscrito</h3> <!-- subscript/subscrito -->
+		<p>H<sub>2</sub>O = Água</p>
+		<p>(Exibe um caractere subscrito/abaixo)</p>
+	</body>
+</html>

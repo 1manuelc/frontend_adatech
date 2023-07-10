@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Principais Tags HTML - Parte 2</title>
+	</head>
+	<body>
+		<h1>Principais Tags HTML - Parte 2</h1>
+		<hr />
+
+		<!-- Imagens -->
+
+            <img src="imgs/html5-logo.webp" alt="Logo do HTML5" width="100%" />
+
+            <!-- 
+                src "source/fonte" da imagem,
+                alt "alternativa", descrição alternativa
+                
+                src se for um diretório pegará uma imagem local,
+                se for um link importará da web
+            -->
+
+            <!-- 
+                atributos width e height definem largura e altura, se usarmos
+                apenas um ele irá redimensionar o outro automaticamente para
+                manter a proporção
+
+                unidades de medida: 
+                    - px por padrão
+                    - % do viewport
+            -->
+
+            <img
+                src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-14.png"
+                alt="Logo do HTML5"
+                width="25%" />
+
+        <!-- Listas -->
+            
+            <h2>Listas</h2>
+            
+            <h3>Lista não numerada</h3>
+            <ul> <!-- Unnumbered list -->
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ul>
+
+            <h3>Lista numerada</h3>
+            <ol> <!-- Ordered list -->
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+        
+        <!-- Tags de uso genérico (span e div) -->
+            
+            <h3>Span: inline</h3>
+            <!-- 
+                span funciona demarcando um trecho de linha de forma específica, é amplamente utilizado em estilizações usando CSS.
+
+                é uma tag inline.
+            -->
+            <p>Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit</span>. Labore pariatur voluptate iste, facere nostrum iusto rem vero soluta, ipsam ipsa possimus distinctio repudiandae aperiam expedita vitae voluptatem reiciendis quaerat necessitatibus.</p>
+
+            <h3>Div: block</h3>
+            <!-- 
+                Div funciona assim como span, mas é utilizado para 
+                delimitar blocos de código, não linhas.
+        
+                também é amplamente utilizado para estilizações e iterações com JavaScript, agrupando múltiplos elementos HTML em blocos.
+
+                é uma tag block (compare as duas na visualização).
+            -->
+            <p>Lorem ipsum dolor, sit amet consectetur <div>adipisicing elit</div>. Labore pariatur voluptate iste, facere nostrum iusto rem vero soluta, ipsam ipsa possimus distinctio repudiandae aperiam expedita vitae voluptatem reiciendis quaerat necessitatibus.</p>
+	</body>
+</html>

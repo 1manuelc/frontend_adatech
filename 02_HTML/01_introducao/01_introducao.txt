@@ -1,0 +1,97 @@
+HTML é uma das ferramentas presentes no Front-End, a parte visual de todo site na Web. 
+
+Juntamente com CSS (Linguagem de Estilização) e JavaScript (Linguagem de Programação), o HTML (que é uma Linguagem de Marcação) define o layout básico das páginas para logo serem estilizadas e tornadas dinâmicas e objetivas.
+
+HTML = HyperText Markup Language (linguagem de marcação de hipertexto).
+
+Mas o que seria um hipertexto?
+    A semiótica o define como um texto que contém referências navegáveis para outros textos, diferentemente do texto comum que tem o único propósito de informar. Hipertexto = Link
+
+E marcação?
+    O termo evidencia o início e fim de um atributo ou propriedade, o que é facilmente visto na linguagem através de delimitações usando caracteres específicos.
+    
+    Linguagens de marcação usam esses caracteres para pressupor metainformações, que se referem dentro do código à:
+        - forma
+        - hierarquia
+        - ordem
+        - ou semântica dos elementos
+
+Atualmente a linguagem HTML está na versão 5, de 2014.
+
+
+Marcação -> por tags (etiquetas)
+Tags HTML:
+    - Delimitadas por < e >
+    
+Exemplos de tag:
+    - <button>Clique Aqui</button>  -> note a estrutura de abertura e fechamento
+    - <p>Parágrafo</p>
+    - dentre outros
+
+Elemento HTML:
+    Geralmente contém 3 elementos: Tag de abertura, conteúdo e tag de fechamento
+    ! Algumas tags não possuem as duas tags, só uma responsável por abrir e fechar !
+
+    Possui um tipo: botão, parágrafo, lista, tabela...
+    
+    Representação de UM elemento é chamada de tag
+    
+    Grande parte dos elementos em HTML permitem declaração de outros elementos em
+    seu interior, o que chamamos de aninhamento de elementos. Por outro lado, alguns
+    elementos permitem somente outros específicos dentro de si, e outros sequer permitem.
+
+    Elementos contém propriedades configuráveis que chamamos de Atributos. São compostos por
+    pares chave-valor, sendo os valores sempre envoltos em aspas.   <tag chave="valor"></tag>
+    ! Alguns atributos podem ser utilizados em qualquer elemento HTML, como o style !
+
+Estrutura Básica de um Documento HTML por tags
+    html
+        head
+            title
+        body
+            div
+            p
+            br
+            ...
+
+    <html> identifica a versão e o tipo do Documento
+        
+        <head> (cabeçalho) traz configurações do Documento, mas não seu conteúdo
+            <title> é um exemplo de tag aninhada á tag head
+        
+        <body> (corpo) mostra para o navegador o conteúdo utilizando as configurações estabelecidas
+        na head as tags aninhadas á body são inúmeras, as 3 citadas são somente exemplos
+
+Principais tags HTML:
+
+    <html> ... </html>      Conteúdo do Documento
+
+    <head> ... </head>      Cabeçalho do Documento
+
+    <title> ... </title>    Título da Página
+
+    <body> ... </body>      Corpo do Documento
+
+    <h1> ... </h1>          Cabeçalho de nível 1 (vai do 1 ao 6)
+
+    <p> ... </p>            Parágrafo
+
+    <div> ... </div>        Conteúdo Genérico em múltiplas linhas
+
+    <a> ... </a>            Link
+
+    <span> ... </span>      Conteúdo Genérico em linha
+
+    <table> ... </table>    Tabela
+
+    <ul> ... </ul>          Lista não ordenada/numerada
+
+    <ol> ... </ol>          Lista ordenada/numerada
+
+    <li> ... </li>          Elemento da lista (<ul> ou <ol>)
+
+    <img/>                  Imagem  (exemplo de tag de auto-fechamento)
+
+Dica: DevTools
+    "Inspecionar" contido nos navegadores é capaz de analisar todo o conteúdo da página
+    contido no documento HTML através de seu código.
