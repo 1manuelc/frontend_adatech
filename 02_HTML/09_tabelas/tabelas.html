@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tabelas no HTML</title>
+	</head>
+	<body>
+		<!-- 
+			Estrutura básica de tabelas
+			<table>
+				<thead>
+					<tr>
+						<th>
+						<th>
+						...
+					/
+				/
+
+				<tbody>
+					<tr>
+						<td>
+						<td>
+						...
+					/
+				/
+			/
+
+			"table" inicia a tabela
+				"thead" inicia o cabeçalho da tabela
+					"tr" inicia uma nova linha ~ table row
+						"th" insere uma nova coluna ~ formatação específica para célula de cabeçalho
+				
+				"tbody" inicia o corpo da tabela
+					"tr" inicia uma nova linha ~ table row
+						"td" insere uma nova coluna ~ table data
+		-->
+
+		<!-- 
+			Nota: estilização das bordas e espaçamento da tabela geralmente é feita em CSS, mas podemos introduzir o atributo "border" na tabela para auxiliar a visualização básica
+		-->
+
+		<main>
+			<h1>Tabelas em HTML</h1>
+			<hr>
+
+			<section id="tabela-alunos">
+				<h3>Tabela de Alunos</h3>
+
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Aluno</th>
+							<th>Email</th>
+							<th>Matrícula</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>Carol Danvers</td>
+							<td>carol.danvers@mail.com</td>
+							<td>1</td>
+						</tr>
+
+						<tr>
+							<td>Peter Parker</td>
+							<td>peter.parker@mail.com</td>
+							<td>2</td>
+						</tr>
+
+						<tr>
+							<td>Tony Stark</td>
+							<td>tony.stark@mail.com</td>
+							<td>3</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="tabela-financas">
+				<h3>Tabela de Finanças</h3>
+
+				<!-- 
+					Utilizando o atributo "rowspan" ou "colspan" podemos mesclar linhas e colunas respectivas atribuindo a duração da mesclagem ao atributo. 
+					
+					nota: é importante excluir as linhas/colunas seguintes para manter a formatação
+				-->
+
+				<table border="2">
+					<thead>
+						<tr>
+							<th>Data</th>
+							<th>Tipo</th>
+							<th>Descrição</th>
+							<th>Valor</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td rowspan="2">15/06/2022</td>
+							<td>Despesa</td>
+							<td>Almoço</td>
+							<td>R$ 35,00</td>
+						</tr>
+
+						<tr>
+							<td>Receita</td>
+							<td>Salário</td>
+							<td>R$ 3.768,00</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+	</body>
+</html>

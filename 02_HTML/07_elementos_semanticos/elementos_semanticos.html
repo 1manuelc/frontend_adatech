@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Elementos Semânticos no HTML</title>
+	</head>
+	<body>
+		<h3>Tag "header" ~ Cabeçalho</h3>
+		<header>
+			Sou um cabeçalho
+			<p>
+				(Contém um bloco de cabeçalho que não difere na estilização, mas
+				semanticamente tem importância enorme)
+			</p>
+		</header>
+
+		<h3>Tag "nav" ~ Conteúdo navegável</h3>
+		<nav>
+			Sou um elemento da barra de navegação
+			<p>
+				(Geralmente contido no cabeçalho, esse elemento constitui as
+				divisões da barra de navegação do site)
+			</p>
+		</nav>
+
+		<h3>Tag "main" ~ Conteúdo principal</h3>
+		<main>
+			Sou o conteúdo principal
+			<p>
+				(Contém um bloco de conteúdo que não difere na estilização, a
+				qual fazemos no CSS, mas segue a mesma lógica semântica)
+			</p>
+		</main>
+
+		<h3>Tag "aside" ~ Conteúdo lateral</h3>
+		<aside>
+			Sou o conteúdo lateral
+			<p>
+				(Pode estar dentro ou fora do conteúdo principal, mesmo não
+				tendo estilização ainda é importante destacar que é um conteúdo
+				secundário)
+			</p>
+		</aside>
+
+		<h3>Tag "footer" ~ Rodapé</h3>
+		<footer>
+			Sou o Rodapé
+			<p>
+				(Estando sempre abaixo do conteúdo principal e cabeçalho,
+				geralmente contém links e informações importantes para contato)
+			</p>
+		</footer>
+
+		<h3>Tag "section" ~ Seção</h3>
+		<section>
+			Sou uma seção
+			<p>
+				(Admite seções diferentes dentro de um site, como divisões
+				semânticas de assunto) (dica bônus: atributo id para identificar
+				singularmente)
+			</p>
+		</section>
+
+		<h3>Tag "article" ~ Artigo</h3>
+		<section>
+			<article>
+				Sou um artigo
+				<p>
+					(Um artigo se refere á subdivisões de conteúdo dentro das
+					seções, criando um novo escopo abaixo da seção onde é
+					possível incluir <code>header, main e footer</code> para
+					cada unidade. Marcar um conteúdo como article o torna mais
+					reutilizável dentro da página)
+				</p>
+			</article>
+		</section>
+
+		<h3>Tag "fig" ~ Bloco de imagens</h3>
+		<p>Sou um bloco de imagens</p>
+		<figure>
+			<img
+				src="https://th.bing.com/th/id/OIP.1bnxcVBT_bKoNqP-tLjcpgHaJf?pid=ImgDet&rs=1"
+				alt="Html5 Logo"
+				width="150px" />
+			<figcaption>Logo atual do HTML5</figcaption>
+
+			<img
+				src="https://www.so-peps.com/wp-content/uploads/2016/03/css-logo.png"
+				alt="CSS3 Logo"
+				width="190px" />
+			<figcaption>Logo atual do CSS3</figcaption>
+
+			<img
+				src="https://th.bing.com/th/id/R.019b8a09ba717a9c6640f2c087ad311a?rik=mqX%2bnl6OYUs%2b8w&pid=ImgRaw&r=0"
+				alt="JS ES6 Logo"
+				width="150px" />
+			<figcaption>Logo atual do JavaScript</figcaption>
+		</figure>
+		<p>
+			(Constitui um bloco de imagens facilmente navegável e referenciável
+			á partir da tag <code>figcaption</code>)
+		</p>
+	</body>
+</html>

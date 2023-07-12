@@ -1,0 +1,55 @@
+12. Exercício II
+
+
+Questão 1 - Resposta correta
+Qual seria a tag mais adequada, de acordo com o HTML semântico, a ser utilizada quando se deseja inserir um texto negrito de grande importância?
+
+    ( ) <mark>
+    ( ) <bold>
+    ( ) <b>
+    (X) <strong>
+    ( ) <em>
+
+
+Questão 2 - Resposta correta
+A tag <nav> é utilizada para:
+
+    ( ) definir uma introdução de um documento ou sessão.
+    (X) criar uma barra/sessão de navegação.
+    ( ) mostrar o progresso de uma execução.
+    ( ) definir um tempo e/ou data.
+    ( ) quebra de linha.
+
+
+Questão 3 - Resposta correta
+Sobre as tags utilizadas para a construção de tabelas é correto afirmar que:
+
+    ( ) para mesclar colunas, pode-se utilizar o atributo rowspan dentro da tag <td>.
+    ( ) para criar uma linha, podemos utilizar a tag <tl>.
+    ( ) para mesclar linhas, pode-se utilizar o atributo rowspan dentro da tag <tr>.
+    ( ) a tag <tr> define uma coluna da tabela.
+    (X) o conteúdo de uma célula pode ser inserido dentro da tag <td> ou <th>.
+
+
+Questão 4 - Resposta incorreta
+Você deseja criar um formulário que ofereça ao usuário quatro opções de seleção, dentre as quais ele poderá selecionar apenas uma. Qual seria o melhor tipo de input para isso?
+
+    ( ) <input type="checkbox" />
+    ( ) <input type="text" />
+    (C) <input type="radio" />
+    (X) <input type="select" />
+    ( ) <input type="file" />
+
+
+Questão 5 - Resposta correta
+De acordo com o HTML5, é indicado que o conteúdo principal da sua página/site, esteja dentro da tag:
+
+    ( ) <section>
+    ( ) <nav>
+    ( ) <aside>
+    (X) <main>
+    ( ) <footer>
+
+
+PONTUAÇÃO: 4 (80%)
+Você acertou 4 de 5 questões.

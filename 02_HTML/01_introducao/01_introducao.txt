@@ -56,7 +56,7 @@ Estrutura Básica de um Documento HTML por tags
 
     <html> identifica a versão e o tipo do Documento
         
-        <head> (cabeçalho) traz configurações do Documento, mas não seu conteúdo
+        <head> (cabeça) traz configurações do Documento, mas não seu conteúdo
             <title> é um exemplo de tag aninhada á tag head
         
         <body> (corpo) mostra para o navegador o conteúdo utilizando as configurações estabelecidas

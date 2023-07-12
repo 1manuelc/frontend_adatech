@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulários HTML</title>
+	</head>
+	<body>
+		<main>
+			<h1>Formulário</h1>
+			<hr />
+			<br />
+
+			<form>
+				<div>
+					<label for="form-nome">Nome:</label>
+					<input type="text" name="nome" id="form-nome" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-email">Email:</label>
+					<input type="email" name="email" id="form-email" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-senha">Senha: </label>
+					<input type="password" name="senha" id="form-senha" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-data">Data de Nascimento: </label>
+					<input type="date" name="data" id="form-data" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-hora">Horário: </label>
+					<input type="time" name="hora" id="form-hora" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-numero">Número: </label>
+					<input type="number" name="numero" id="form-numero" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-arquivo">Arquivo: </label>
+					<input type="file" name="arquivo" id="form-arquivo" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-url">URL: </label>
+					<input type="url" name="url" id="form-url" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-cor">Cor: </label>
+					<input type="color" name="cor" id="form-cor" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-intervalo">Intervalo: </label>
+					<input
+						type="range"
+						name="intervalo"
+						id="form-intervalo"
+						min="0"
+						max="50"
+						step="5" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-check">Caixa de seleção: </label>
+					<input
+						type="checkbox"
+						name="check"
+						id="form-check"
+						checked />
+				</div>
+
+				<div>
+					<p>
+						Botão radio:
+						<label for="form-radio1">1</label>
+						<input type="radio" name="radio" id="form-radio1" />
+
+						<label for="form-radio2">2</label>
+						<input type="radio" name="radio" id="form-radio2" />
+
+						<label for="form-radio3">3</label>
+						<input type="radio" name="radio" id="form-radio3" />
+					</p>
+				</div>
+
+				<div>
+					<label for="form-reset">Reset:</label>
+					<input type="reset" value="Limpar" id="form-reset" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-submit">Submit:</label>
+					<input type="submit" value="Enviar" id="form-submit" />
+				</div>
+				<br />
+
+				<div>
+					<label for="form-bio">Sua biografia:</label>
+					<textarea
+						name="biogra"
+						id="form-bio"
+						cols="30"
+						rows="5"></textarea>
+				</div>
+				<br />
+
+				<div>
+					<label for="form-seletor">Seletor: </label>
+					<select name="seletor" id="form-seletor">
+						<option value="" selected disabled>
+							Selecione uma das opções
+						</option>
+						<option value="deceita">Receita</option>
+						<option value="despesa">Despesa</option>
+						<option value="transferencia">Transferência</option>
+					</select>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
+
+<!--
+	tag "form" inicia um formulário povoado por "inputs"
+		- action="" (define a URI para onde os dados serão enviados após submeter)
+		- method="" (define o método de submissão do form, assume get ou post)
+	
+	tag "input" é responsável por definir entradas no documento
+	atributos:
+		- type="" (define um tipo de entrada)
+				propriedades:
+					- text
+					- email (semanticamente analisa os caracteres do campo)
+					- password (mascara caracteres ao digitar)
+					- date (data)
+					- time (hora)
+					- datetime (data e hora)
+					- number (número)
+					- file (arquivo)
+					- url (link)
+					- color (seleção de cor)
+					- range: (intervalo numérico ou de valor predefinido)
+							value, min, max e step. é possível adicionar marcadores
+					- checkbox
+							checked
+					- submit
+					- reset
+
+		- placeholder="" (define um texto opaco de sugestão dentro de caixas)
+		- value="" (define um valor padrão para a entrada, sujeito a modificação do cliente)
+		- name="" (define uma identificação para o campo depois de submeter ao destino do formulário. Usado para identificação principalmente em bancos de dados e JavaScript)
+		- id="" (atributo de identificação particular para cada elemento, usado na tag "label")
+
+	tag "label" atribui um nome/etiqueta para o "input".
+	atributos:
+		- for="" (recebe um id correspondente á um input, redirecionando para a entrada após o clique na etiqueta.)
+
+	tag "textarea" insere uma área de texto com quantidade de linhas e colunas customizáveis.
+		- cols (colunas)
+		- rows (linhas)
+
+	tag "select" implementa um seletor de opções predefinidas dentro de tags aninhadas "option"
+	tag "option" descreve cada um dos elementos do seletor através do conteúdo interno á tag
+		- value="" (valor escolhido a ser submetido ao destino do formulário)
+		- selected (torna uma seleção a que vem selecionada por padrão, similar ao checked)
+		- disabled (desativa a opção)
+		(selected e disabled se atribuídos juntos á uma opção formam um placeholder não selecionável)
+-->
