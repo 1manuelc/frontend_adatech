@@ -1,0 +1,60 @@
+* {
+	margin: auto;
+	padding: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #151515;
+}
+
+div#bg {
+	height: 38%;
+	background-image: url("https://images.unsplash.com/photo-1688494930244-6a7d73e4010a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+	background-size: 100%;
+}
+
+div.content {
+	color: #ffffff;
+	margin-top: 18vh;
+	width: 500px;
+	height: 520px;
+	background-color: #373737;
+}
+
+h1,
+h2,
+p {
+	padding: 1% 7% 1% 7%;
+}
+
+h1 {
+	margin-top: 3%;
+	font-size: 3.5vh;
+}
+
+h2 {
+	font-size: 2vh;
+}
+
+p {
+	text-align: justify;
+	font-size: 1.6vh;
+}
+
+/*
+    Conteúdo da Aula:
+    - cores em RGB e combinações, extensão Color Highlight
+    - regras:
+        background-image
+        background-attachment
+        background-repeat
+        background-position
+        
+        text-decoration
+        text-transform
+        text-ident
+        text-align
+        font-style
+        font-family
+*/

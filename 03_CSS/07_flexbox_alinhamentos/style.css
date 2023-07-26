@@ -1,0 +1,150 @@
+:root {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* centraliza os elemento-filhos, no caso, .boxes */
+main {
+	height: 100vh; /* define o tamanho do elemento como 100% da altura do viewport, ou seja, dá uma referência de tamanho para align-items */
+	margin: 0; /* retira as margens que interferem no alinhamento secundário */
+
+	display: flex; /* direção será em linha, ou seja, eixo princ. é horizontal */
+	justify-content: center; /* centraliza no eixo principal = horizontal */
+	align-items: center; /* centraliza no eixo secundário = vertical */
+}
+
+/* centraliza os elemento-filhos, no caso, .box */
+.boxes {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 2rem 4rem; /* gap definido por y, x */
+}
+
+button {
+	width: 10rem;
+	height: 4rem;
+	background-color: black;
+	border-style: none;
+	border-radius: 0.5rem;
+	color: white;
+	box-shadow: .05rem .05rem .5rem #1f1f1f;
+}
+
+button:hover {
+	background-color: black;
+	border-style: none;
+	border-radius: 0.5rem;
+	color: blue;
+}
+
+.box {
+	min-width: 7rem;
+	min-height: 2rem;
+	padding: 1.5rem;
+
+	background-color: blue;
+	border: 0.6rem solid navy;
+	border-radius: 0.4rem;
+	color: white;
+	font-size: 4rem;
+
+	order: 0; /* define uma ordem no elemento-pai para depois ser alterada nos elementos-fihos */
+
+	/* centraliza os elemento-filhos, no caso, os textos internos */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: calc(
+		25% - 5rem
+	); /* define uma quantidade-base de espaço ocupado por cada linha, a fim de equilibrar todas */
+	flex: 1;
+	gap: 0 1rem;
+}
+
+.box:nth-child(1) {
+	order: 0;
+	flex: 1.5;
+}
+
+.box:nth-child(2) {
+	order: -1;
+}
+
+/*
+	Conteúdo da Aula:
+	flex-wrap - define se o container permitirá tamanhos flexíveis
+		wrap
+		wrap-reverse
+		nowrap
+
+	flex-direction
+		row
+		row-reverse
+		column
+		column-reverse
+
+	flex-flow (shorthand de direction e wrap)
+		combinação de duas propriedades wrap e direction.
+
+	flex
+		propriedade recebe um valor de flexibilidade (taxa de flexibilidade de um elemento em relação ao outro, podendo ser utilizado nos seletores :nth-child() para diferir elementos-filhos).
+
+	flex-basis
+		define uma taxa de espaço padrão entre a unidade de direção escolhida (row ou column), atribuindo quantidades de elementos padronizadas para a unidade.
+
+	gap
+		atribui um espaço fixo entre elementos-filhos do container.
+			(recebe valores para y, x respectivamente no viewport)
+
+	{ 
+		Formas de alinhar elementos utilizando container flexível:
+
+		justify-content
+		alinha elementos-filhos do container flexível de acordo com a propriedade no eixo principal 
+		(dependendo se está na direção de linha ou coluna o eixo será diferente)
+		(row = horizontal, column = vertical)
+
+		align-items
+			alinha elementos-filhos do container de acordo com a propriedade no eixo transversal/secundário
+			(row = vertical, column = horizontal)
+
+		align-content
+			define distribuição de forma padronizada entre elementos flexíveis quando há quebra de linha e flex-wrap.
+
+		Todas essas regras acima podem receber as propriedades:
+		! (salvas algumas exceções para space-evenly e stretch)
+			- center
+			- flex-start
+			- flex-end
+			- space-between (igual entre elementos)
+			- space-around (igual somente nas bordas)
+			- space-evenly (igual entre elementos e bordas)
+			- strech (estica-se as linhas para preencher o espaço)
+	}
+
+	order
+		define uma ordem no elemento-pai e modifica essa mesma ordem nos elementos filhos. (poupa tempo e trabalho em HTML e até JavaScript)
+
+		ex:
+			.boxes {
+				order: 0; // define todos os elementos-filhos na mesma ordem
+			}
+
+			.box:nth-child(1) {
+				order: -1; // movido para antes do elemento 0
+			}
+
+			.box:nth-child(2) {
+				order: 0; // movido para depois do elemento -1
+			}
+
+			.box:nth-child(3) {
+				order: 0; // movido para depois do elemento 0
+			}
+
+			.box:nth-child(4) {
+				order: 1; // movido para depois do elemento 0 anterior
+			}
+*/

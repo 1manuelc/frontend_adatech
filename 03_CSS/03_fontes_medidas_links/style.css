@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: auto;
+	padding: auto;
+	font-family: "Work Sans", Arial, sans-serif;
+}
+
+:root {
+	font-size: 62.5%;
+	/* utilizamos 62.5 para manter a correspondência de 10% com a medida de pixels, p.ex.: 10px == 1.0rem */
+}
+
+body {
+	background-color: #151515;
+}
+
+div#bg {
+	height: 30vh;
+	background-image: url("https://images.unsplash.com/photo-1688494930244-6a7d73e4010a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+div.content {
+	color: #ffffff;
+	align-items: center;
+	background-color: #373737;
+	padding-bottom: 10vh;
+}
+
+h1,
+h2,
+p,
+a {
+	padding: 1vh 3vw 1vh;
+}
+
+h1 {
+	margin-top: 1vh;
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+p {
+	text-align: justify;
+	font-size: 1.7rem;
+}
+
+a {
+	font-size: 1.7rem;
+	font-weight: 500;
+	color: #ff2600;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ff9494;
+}
+
+a:hover {
+	color: #029d9d;
+}
+
+a:active {
+	color: #ffffff;
+}
+
+/*
+    Conteúdo da Aula:
+    - Fontes serifadas e não serifadas
+	- Importação do Google Fonts e prioridade de seleção.
+		
+		font-family: prioridade1, prioridade2, fallback
+		(da esquerda pra direita, temos uma fonte prioritária,
+		uma substituta e um fallback = um tipo generalista de fonte para substituição por uma que houver na máquina,
+		por prioridade de achar na máquina)
+
+		importação pelo Google Fonts tem instruções para importação via <link> em HTML e @import em CSS, além da aplicação na regra font-family.
+
+	- Unidades de medida
+		rem, %, vh, vw, em, px e palavras-chave.
+		
+		rem é a unidade de medida padrão calculada á partir da proporção na pseudoclasse :root, sendo preferencialmente usada por manter as preferências do usuário em diferentes navegadores (isso se tratando de fontes)
+
+		% deve ser utilizado com cuidado por não ter uma referência fixa (tamanho da página, tamanho padrão de fonte definido pelo root e etc.), fora que existem diferenças de obediência aos limites de elementos-pai, % geralmente obedece, mas vh e vw não.
+
+		vh, vw utilizam como referência razões do elemento comparadas com o tamanho do viewport (viewport height e viewport width)
+
+		em e px não são recomendados por serem fixos e redefinirem /desobedecerem facilmente as medidas de elementos anteriores (elementos-pai)
+
+		! nota: se houverem múltiplas configurações de uma regra, a renderização obedecerá a última definição, ou seja, a que estiver mais abaixo nas linhas de código
+
+	- Conceitos básicos de acessibilidade
+		Acessibilidade neste contexto se trata de manter as preferências do usuário mantendo a página responsiva. Supondo um usuário com visão baixa, se a página estiver definida com fontes pequenas e não responsivas, o prejuízo é enorme. Por isso, se torna importante utilizar unidades de medida responsivas e próprias para cada elemento.
+
+	- Links e seus estados
+		Grande maioria dos elementos HTML que podem ser citados utilizando seletores têm estados diferentes ao interagir com eles, seja passando o cursor em cima, visitando um link, ou até mesmo sem ter feito nada. O CSS vigia esses estados e pode atribuir diferentes configurações de regras dependendo do contexto pedido.
+
+		Para links, temos estados como:
+			hover (cursor passa em cima), visited (link já visitado anteriormente), active (link da página atual) e o padrão.
+
+			! nota: para não sobrescrevermos nenhuma regra, devemos seguir a ordem de estados (de cima para baixo) = a -> a:visited -> a:hover -> a:active
+
+		Esses estados podem ser considerados pseudo-classes (assim como :root que foi usada para definir a proporção de tamanho de fonte no documento inteiro), conceito que ainda não foi explicado, apenas usado na prática
+*/

@@ -1,0 +1,52 @@
+Introdução ao CSS e história da Web
+
+    No início da Web, não havia estilização complexa e interações elaboradas nas páginas,
+    tendo o HTML como ferramenta de estruturação das páginas e talvez uma mínima estilização
+    possível com aquela versão da linguagem de marcação.
+
+    Com o tempo e a necessidade de mais tags surgirem para compor, estilizar e tornar os sites
+    mais completos, se fez necessário ter uma linguagem para estilizar as páginas que eram
+    somente estruturadas.
+
+    Daí surge o CSS, a linguagem de estilização padrão usada em conjunto com o HTML, suprindo
+    necessidades de estilo, espaçamento, padrões visuais em geral.
+
+Como usar o CSS?
+
+    O HTML em si já possui as propriedades do CSS integradas ao atributo "style" em cada tag,
+    podendo estilizar os elementos usando uma atribuição em sua tag de abertura o que torna
+    o código maior, além de menos legível  e organizado. Chamamos este método de inline.
+
+    Outra forma menos apreciada de utilizar as estilizações mas ainda assim mais organizada
+    do que nas tags, é utilizando a tag "style" na "head" do documento, podendo desenvolver o
+    código CSS dentro do documento HTML.
+
+    E por fim, a forma padrão, ligar o documento .html á um outro documento .css utilizando a
+    tag "link" com atribuição rel="stylesheet" e href="arquivo.css". Ou simplesmente o emmet
+    "link:css". Assim, temos maior organização e controle separado da estrutura do documento
+    e estilização do mesmo.
+
+Sintaxe básica do CSS
+
+    Para estilizar algo, precisamos escolher qual ou quais elementos estilizar, por isso
+    existem os Seletores, compostos por:
+    - tags
+    - id
+    - class
+    - span
+    - div
+    - e mais...
+
+    Escolhendo o que estilizar, podemos aplicar propriedades customizáveis, ou regras:
+    
+    Para cor:
+        - color
+        - background-color
+        - e mais...
+    
+    Para texto:
+        - font-size
+        - font-weight
+        - text-align
+        - font-family
+        - e mais...

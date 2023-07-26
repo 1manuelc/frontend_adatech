@@ -1,0 +1,54 @@
+06. Exercício I
+
+Questão 1 - Resposta correta
+Selecione a alternativa que representa todos os seletores básicos.
+    (X) tag, classe, id, universais e atributo.
+    ( ) tag, classe, id e atributo.
+    ( ) tag, classe e id.
+    ( ) id, classe e tag.
+    ( ) classe, universais e tag.
+
+Questão 2 - Resposta correta
+Selecione a alternativa que correta completamente a lacuna deixada no código e que faça com que todos os elementos com a classe 'fundo-preto' tenham alteração do bloco css abaixo.
+
+_____fundo-preto {
+    background-color: black;
+}
+    ( ) #
+    ( ) *
+    (X) .
+    ( ) ;
+
+Questão 3 - Resposta correta
+Selecione a afirmativa correta com base no código abaixo.
+
+input[type='text'] {
+  color: red;
+}
+    ( ) O seletor que está sendo utilizado para aplicar o estilo de cor é o de classe.
+    (X) O seletor que está sendo utilizado para aplicar o estilo de cor é o de atributo.
+    ( ) O seletor que está sendo utilizado para aplicar o estilo de cor é o de tag.
+    ( ) O seletor que está sendo utilizado para aplicar o estilo de cor é o de id.
+    ( ) O seletor que está sendo utilizado para aplicar o estilo de cor é o universal.
+
+Questão 4 - Resposta correta
+O bloco de código css abaixo, está utilizando o tipo de seletor:
+
+.classe-inventada > div { 
+    color: black;
+}
+    ( ) aninhado.
+    (X) aninhado de um nível.
+    ( ) atributo.
+    ( ) classe.
+
+Questão 5 - Resposta correta
+Selecione a alternativa que não representa uma pseudo-classe.
+    ( ) hover
+    ( ) active
+    ( ) checked
+    (X) clicked
+    ( ) disabled
+
+PONTUAÇÃO: 5 (100%)
+Você acertou 5 de 5 questões.

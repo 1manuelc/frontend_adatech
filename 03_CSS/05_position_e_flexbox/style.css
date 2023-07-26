@@ -1,0 +1,132 @@
+:root {
+	font-size: 62.5%;
+}
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #212121;
+	color: #ffffff;
+}
+
+main {
+	margin-top: 7rem;
+}
+
+.bg {
+	height: 50vh;
+	width: 100%;
+	background-image: url("https://images.unsplash.com/photo-1689005046852-f2b6520884eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	padding: 7vh 0 7vh 0;
+	font-size: 2.8rem;
+	text-align: center;
+	font-weight: 900;
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.box {
+	flex: 30%;
+	width: 10rem;
+	height: 20rem;
+	margin: 1.5rem;
+	padding: 1.5rem;
+	background-color: #0066ba;
+	color: #ffffff;
+	border: 10px solid #ff0000;
+	display: inline-block;
+	border-radius: 0.4rem;
+	position: relative;
+}
+
+nav.navbar {
+	background-color: #303030;
+	width: 100%;
+	height: 7rem;
+	text-align: left;
+	padding: 2.5rem;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+nav.navbar .nav-links {
+	color: #fff;
+	padding-right: 3rem;
+	position: relative;
+	left: 3rem;
+	top: -2.5rem;
+}
+
+nav.navbar #logo-adatech {
+	width: 7rem;
+	position: relative;
+	top: -1rem;
+}
+
+div.contact-list h3 {
+	padding-left: 2rem;
+	background-color: #0066ba;
+	width: 100%;
+	height: 5rem;
+	border-radius: 2rem;
+	position: sticky;
+	top: 7rem;
+}
+
+div.contact-list li {
+	padding: 3rem 1rem 3rem 0;
+	font-size: 2rem;
+	list-style: none;
+	border: #0066ba solid 0.1rem;
+}
+
+/*
+    Conteúdo da aula:
+    
+	regra "position" e as distintas formas de posicionar elementos na tela
+		static (padrão, estático)
+		relative (posiciona um elemento de acordo com seu posicionamento original, deslocando com as regras:
+			top
+			right
+			bottom
+			left
+		)
+		absolute (posiciona o elemento de acordo com as proporções da página, também utilizando as regras de posicionamento)
+		fixed (fixa o elemento na posição selecionada no viewport, usando as regras também) (útil para barras de navegação)
+		sticky (fixa o elemento na posição selecionada no viewport, mas somente quando o scroll passa do mesmo) (útil para ordenamentos)
+
+	forma antiga de posicionar elementos na tela:
+		float (alterna a ordem dos elementos-filhos e até elementos seguintes, por isso está depreciado, falta de controle)
+			top
+			right
+			bottom
+			left
+		clear (previne de elementos se desprenderem do seu fluxo padrão causados pela regra float)
+			both
+			left
+			none
+			right
+
+	display: flex; a forma mais fácil de posicionar elementos-filhos de forma consecutiva.
+		Para usar a forma flexível de posicionamento, utiliza-se a regra display com propriedade flex no elemento-pai.
+		
+		Nos elementos-filhos utiliza-se a regra flex para definir a medida de flexibilidade (adaptação do elemento no viewport)
+
+		Nota: para os elementos esticarem/diminuírem, utilizamos a regra flex-wrap no elemento-pai, com propriedade wrap.
+
+		Assim, podemos posicionar os elementos em linhas e colunas utilizando o flex-direction no elemento-pai.
+*/
