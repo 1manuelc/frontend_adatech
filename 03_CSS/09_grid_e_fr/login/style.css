@@ -1,0 +1,135 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.all-container {
+  height: calc(100vh - 10rem);
+  display: grid;
+  grid-template-areas:
+  "title login login"
+  "title login login"
+  ;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  grid-area: title;
+  padding: 12rem;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 6rem;
+}
+
+.title h1 span {
+  color: #52b69a;
+}
+
+.login {
+  padding: 10rem 24rem;
+  font-size: 2rem;
+  grid-area: login;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  height: 6rem;
+  
+  border: none;
+  border-radius: .5rem;
+  background-color: #52b69a;
+
+  color: #fff;
+  font-size: 2rem;
+  transition: all .1s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  padding: 1rem;
+  width: 100%;
+  
+  border: none;
+  border-radius: .5rem;
+  background-color: #ffffff;
+
+  color: #000000;
+  font-size: 1.6rem;
+  box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.300);
+  cursor: pointer;
+}
+
+.fa-cubes {
+  height: 12vh;
+}
+
+label {
+  font-weight: 900;
+}
+
+input {
+  display: block;
+  width: 50rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100vw;
+  height: 10rem;
+
+  background-color: #000;
+}
+
+a {
+  padding-left: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #52b69a;
+}
+
+/*
+  Conteúdo da Aula
+    display: grid
+    grid-template-rows
+    grid-template-columns
+    grid-template-areas
+    grid-areas
+    gap
+    unidade fr
+    repeat
+    minmax
+*/

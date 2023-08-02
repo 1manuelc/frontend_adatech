@@ -1,0 +1,100 @@
+<!--
+  Questão 7.
+  Agora, você deve criar um formulário HTML de cadastro de pessoas em
+  uma loja virtual. Nesse formulário, você deve solicitar as seguintes
+  informações ao usuário:
+  ● Nome
+  ● E-mail
+  ● CPF
+  ● Gênero
+  ● Data de Nascimento
+  ● Telefone
+  ● Quer ou não receber notificações por WhatsApp
+  ● Quer ou não receber ofertas por e-mail
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Questão 07</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Cadastro da Loja</h1>
+
+			<form>
+				<p>
+					<label for="form-nome">Nome:</label>
+					<input type="text" name="nome" id="form-nome" />
+				</p>
+
+				<p>
+					<label for="form-email">Email:</label>
+					<input
+						type="email"
+						name="email"
+						id="form-email"
+						placeholder="seuemail@dominio.com" />
+				</p>
+
+				<p>
+					<label for="form-cpf">CPF:</label>
+					<input
+						id="form-cpf"
+						type="text"
+						placeholder="000.000.000-00"
+						maxlength="14" />
+				</p>
+
+				<p>
+					<label for="form-genero">Gênero</label>
+					<select name="genero" id="form-genero">
+						<option value="" selected disabled>
+							Selecione uma opção
+						</option>
+						<option value="M">Masculino</option>
+						<option value="F">Feminino</option>
+						<option value="X">Prefiro não dizer</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="form-nasc">Data de nascimento:</label>
+					<input type="date" name="datanasc" id="form-nasc" />
+				</p>
+
+				<p>
+					<label for="form-telef">Telefone:</label>
+					<input 
+            type="tel" 
+            name="telefone" 
+            id="form-telef"
+            placeholder="(00) 0000-0000" />
+				</p>
+
+				<p>
+					Quer receber notificações por WhatsApp?
+					<br />
+					<label for="form-radiow1">Sim</label>
+					<input type="radio" name="radiowpp" id="form-radiow1" />
+
+					<label for="form-radiow2">Não</label>
+					<input type="radio" name="radiowpp" id="form-radiow2" />
+				</p>
+
+				<p>
+					Quer receber ofertas por email?
+					<br />
+					<label for="form-radioe1">Sim</label>
+					<input type="radio" name="radiomail" id="form-radioe1" />
+
+					<label for="form-radioe2">Não</label>
+					<input type="radio" name="radiomail" id="form-radioe2" />
+				</p>
+			</form>
+		</main>
+	</body>
+</html>

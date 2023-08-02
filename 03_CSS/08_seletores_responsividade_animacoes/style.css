@@ -1,0 +1,298 @@
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: rgb(45, 45, 45);
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.imagem {
+	width: 100%;
+
+	background-image: url("https://images.unsplash.com/photo-1678581231067-644dddeca6dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4rem;
+
+	/* display: none; */ /* bloco some */
+	/* visibility: hidden; */ /* elemento some */
+	opacity: 0.5; /* elemento some controladamente */
+}
+
+h3 {
+	text-align: left;
+	font-size: 2rem;
+}
+
+.tabela {
+	text-align: left;
+	font-size: 1.5rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+table {
+	width: 100vw;
+	border: 0.05rem solid black;
+}
+
+th,
+td {
+	padding: 1rem;
+	border: 0.05rem solid black;
+}
+
+th {
+	background-color: rgb(0, 81, 128);
+	color: white;
+}
+
+[data-company="GCO"] {
+	background-color: azure;
+	color: #000000;
+}
+
+[data-company="CCL"] {
+	background-color: #c85858;
+	color: #000000;
+}
+
+[data-company="CEC"] {
+	background-color: #0672ff;
+	color: #ffffff;
+}
+
+[data-company="TTC"] {
+	background-color: #4806ff;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+	div.imagem {
+		height: 35vh;
+		background-size: 200vh;
+		background-position: 0 -10vh;
+	}
+} /* tablet até 4k */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	div.imagem {
+		height: 45vh;
+		background-size: 90rem;
+		background-position: -5rem 0;
+	}
+} /* mobile até tablet */
+
+@media screen and (max-width: 424px) {
+	div.imagem {
+		height: 30vh;
+		width: 100vw;
+		background-size: 50rem;
+		background-position: -5rem 0;
+	}
+} /* 0 até mobile */
+
+button {
+	display: block;
+	margin: auto;
+
+	width: 80%;
+	height: 5rem;
+	padding: 0.8rem 2.4rem;
+
+	border: none;
+	border-radius: 0.2rem;
+	background-color: #d6d6d6;
+	opacity: 0.5;
+
+	transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.5s ease;
+}
+
+button:hover {
+	opacity: 1;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+a#team_button {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 3rem auto;
+	justify-content: center;
+	align-items: center;
+
+	width: 20%;
+	height: 4rem;
+	padding: 0.8rem 2.4rem;
+
+	border: none;
+	border-radius: 0.2rem;
+	background-color: #d6d6d6;
+	opacity: 0.5;
+
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	font-size: 1.4rem;
+
+	animation: pulse 0.8s infinite alternate;
+	transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+a#team_button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+div.loading_container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 4rem;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotateZ(0deg)
+	}
+
+	100% {
+		transform: rotateZ(360deg)
+	}
+}
+
+img#loading_svg {
+	width: 5%;
+	animation: loading 1s infinite ease-in-out;
+}
+
+/*
+	Conteúdo da Aula:
+		01. Seletores extras:
+			
+			Além de seletores por classe, id, tags, universais e pseudoelementos, podemos selecionar elementos por atributos específicos deles utilizando:
+				
+				[atributo="propriedade"] {
+					regras...
+				}
+
+			dica: podemos criar atributos específicos utilizando o prefixo "data-", exemplo:
+				HTML
+				<tr data-company="GCO">
+					...
+				</tr>
+
+				CSS
+				[data-company="GCO"] {
+					...
+				} 
+				// lê-se: quando o atributo data-company for igual á GCO...
+		
+		02. Responsividade básica utilizando @media screen
+			
+			Para que nossos elementos se comportem de forma diferente a cada tamanho de dispositivo que acessa a página, podemos detectar essa dimensão e estilizar elementos conforme isso utilizando:
+
+			@media screen and (min-width: min-varpx) and (max-width: max-varpx) {
+				...
+			} // Se a tela for de min-var pixels até max-varpx, estilize...
+
+			Assim atribuímos um intervalo de detecção, se assemelhando á um "if" nas linguagens de programação.
+
+			Como exemplificado no código acima, podemos personalizar elementos da melhor forma possível para aquela dimensão de tela utilizando esse recurso.
+
+			detalhe: @media é uma regra-at, ou regra condicional, onde atribuímos propriedades dependendo do contexto da página (como o tamanho por exemplo), mas existem muitas outras regras condicionais úteis.
+
+			@media screen (altera a exibição em tempo real).
+			@media print (altera a exibição ao imprimir a página).
+
+		03. Formas de esconder elementos
+			- display: none;
+				Torna o bloco do elemento invisível, assim deixando de monitorar eventos
+
+			- opacity: 0 ao 1;
+				Manipula a transparência do elemento, mas não deixa de monitorar eventos mesmo com elemento invisível (valor 0)
+
+			- visibility: hidden;
+				Esconde o elemento sem monitorar os eventos.
+
+		04. Transformações de elementos
+			Para transformar particularmente os elementos, utilizamos a regra transform, que conta com várias possibilidades de movimentação de elementos.
+		
+		04.1. Cursores
+			Induzimos o usuário a ter determinado comportamento sobre um elemento trocando o ícone do cursor utilizando a propriedade:
+				cursor: pointer; (botões)
+				cursor: wait;
+				cursor: crosshair;
+				...
+
+		04.2. Alinhamento ao centro em display: block;
+			Para alinhar ao centro utilizando display block, basta adicionar um "margin: auto;" ao elemento, visto que ele já tem um bloco único somente para si.
+
+		05. Transições animadas entre estados
+			É possível animar alterações nas propriedades css de um estado para o outro (p.ex.: padrão para hover em um botão) de forma mais suave através da propriedade transition.
+
+			Sintaxe:
+				transition: <elemento/all> <tempo> <funcao-suave>
+
+				. Podemos definir uma propriedade específica para animar, como opacity e color por exemplo.
+
+				. Além disso, pode-se definir a duração da transição em segundos ou milésimos de segundo (1s ou 0.5s)
+
+				. As funções de suavização estão inclusas no emmet do css com nomenclaturas como bezier(propriedades aqui), ease, easy-in-out, etc. São como a transição se comporta graficamente na duração determinada.
+
+			Transições compostas
+				É possível encadear mais de uma transição de elementos diferentes na mesma propriedade transition, basta separá-las por vírgula.
+
+				transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.5s ease;
+
+		06. Animações predefinidas
+			Podemos definir animações predefinidas com a regra condicional @keyframes, por exemplo:
+
+			@keyframes nome_animacao {
+				0% {...}		// propriedades do começo da animação
+				100% {...}	// propriedades do final da animação
+			}
+
+			Para aplicar a animação definida, utilizamos a regra animation no elemento desejado.
+
+			animation: nome_animacao duracao modificador(es) funcao_suave;
+
+			. a duração permanece na mesma lógica de transition
+			. os modificadores definem aspectos fundamentais da animação, como:
+				- infinite (animação não tem fim)
+				- forwards, backwards, both, alternate, alternate-reverse (ditam a ordem da animação, no começo, fim, ambos, alternadamente...)
+
+			. as funções suaves funcionam da mesma forma de transition
+
+			! vale lembrar que transition e animation não se misturam, ou seja, não interagem entre si. A diferença é que transition faz a animação entre um estado e outro do elemento, animation é independente.
+			
+			! a propriedade animation recebe tantas definições assim por ser uma shorthand, isso significa que as definições escritas possuem propriedades separadas.
+				- iteration-count: infinite ou numero
+				- animation-duration: tempo;
+				- animation-direction: alternate, alternate-reverse;
+				- animation-fill-mode: both, forwards, backwards...;
+				- animation-delay: duração antes de começar;
+				- animation-play-state: pause ou running;
+
+			NOTA: 
+				Devemos priorizar animar propriedades css otimizadas para animação, como transform e opacity por exemplo.
+				
+				Animar layouts é um exemplo de má prática para performance, visto que nem todos os dispositivos tem hardware suficiente para renderizar animações mais complexas como essa.
+*/

@@ -1,0 +1,83 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  height: 100vh;
+}
+
+.navbar {
+  position: static;
+  top: 0;
+  height: 9rem;
+  width: 100%;
+
+  background-color: #000;
+}
+
+.navbar_links {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  gap: 4rem;
+
+  list-style: none;  
+}
+
+.fa-cube {
+  color: #fff;
+  height: 4rem;
+  padding-left: 4rem;
+  padding-right: calc(3rem - 2rem);
+}
+
+.navbar_links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+
+  transition: all .1s ease-in-out;
+}
+
+.navbar_links li a:hover{
+  opacity: .6;
+}
+
+main {
+  display: grid;
+  height: calc(100vh - 25rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.page_content {
+  height: 50rem;
+  width: 50rem;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lists {
+  display: flex;
+  flex-flow: column;
+  gap: 5rem 0;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+li {
+  padding: .3rem;
+}

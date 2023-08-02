@@ -1,0 +1,86 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #232323;
+}
+
+.page_container {
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+img#profile_photo {
+  width: 35rem;
+  border-radius: 5rem;
+}
+
+.links {
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+}
+
+.link_button {
+  display: flex;
+  justify-content: center;
+
+  width: 45rem;
+  height: 10rem;
+
+  background-color: #ffffff;
+  border-radius: 1rem;
+
+  transition: all .1s ease-in-out;
+}
+
+.link_button:hover {
+  background-color: #ffffff70;
+}
+
+.link_infos {
+  height: inherit;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12rem;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all .1s ease-in-out;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#about_me {
+  color: #ffffff;
+  transition: all .1s ease-in-out;
+}
+
+#about_me:hover {
+  opacity: .6;
+}
