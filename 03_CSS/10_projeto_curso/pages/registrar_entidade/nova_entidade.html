@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>We Form - Nova entidade</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/cbb97ad2f4.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="content">
+			<aside>
+				<img
+					src="/03_CSS/10_projeto_curso/assets/hero.svg"
+					alt="Ilustração de mulher e cachorro" />
+				<h1><span class="rosa">We</span> Form</h1>
+			</aside>
+
+			<main>
+				<header>
+					<a href="/03_CSS/10_projeto_curso/pages/login/login.html">
+						<i class="fa-solid fa-angle-left"></i>
+					</a>
+					<h2>Nova <span class="rosa">entidade</span></h2>
+				</header>
+
+				<form>
+					<div class="form-nome">
+						<label for="input-nome">Nome</label>
+						<input type="text" name="nome" id="input-nome" />
+					</div>
+
+					<div class="select-div">
+						<label for="input-campo">
+							Campo de atuação
+							<i class="fa-solid fa-angle-down"></i>
+						</label>
+						<select name="campo" id="input-campo">
+							<option selected disabled>
+								Selecione uma opção
+							</option>
+							<option value="1">Abrigo de animais</option>
+							<option value="2">centro de alimentação</option>
+							<option value="3">creche infantil</option>
+						</select>
+					</div>
+
+					<div class="pontos">
+						<label for="input-pontos">Ponto(s) de coleta</label>
+						<input type="text" name="pontos" id="input-pontos" />
+						<button>
+							<i class="fa-solid fa-square-plus"></i>
+						</button>
+					</div>
+				</form>
+
+				<div class="botoes">
+					<a href="">Cadastrar</a>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

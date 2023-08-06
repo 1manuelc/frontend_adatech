@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+aside {
+	grid-area: hero;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+aside h1 {
+	font-size: 6.4rem;
+}
+
+span.rosa {
+	color: #ff5678;
+}
+
+main {
+	grid-area: form;
+	width: 60rem;
+	height: 52rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.15);
+	border-radius: 1.2rem;
+	padding: 4.4rem 5.7rem;
+}
+
+main h2 {
+	max-width: 430px;
+	font-size: 3.6rem;
+	font-weight: 500;
+}
+
+main .botoes {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+main .botoes a {
+	height: 5.5rem;
+
+	text-decoration: none;
+	font-size: 2.4rem;
+
+	color: #fff;
+	background-color: #35e6e9;
+	border-radius: 1.2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5.4rem;
+}
+
+main .botoes a + a {
+	margin-top: 4.8rem;
+
+	color: #fff;
+	background-color: #ff5678;
+}
+
+main footer p {
+	margin-top: 8rem;
+	font-size: 1.6rem;
+}
+
+main footer a {
+	margin-top: 1rem;
+	font-size: 1.8rem;
+	display: block;
+	text-align: center;
+	color: #000;
+}
+
+.content {
+	height: 100vh;
+
+	display: grid;
+	grid-template-areas:
+		". . . . ."
+		". hero . form ."
+		". hero . form ."
+		". . . . .";
+	justify-content: center;
+	align-items: center;
+	gap: 8.5rem 2rem;
+}
+
+a {
+	transition: opacity 0.1s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.5;
+}

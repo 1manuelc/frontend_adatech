@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+	font-size: 62.5%;
+  --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  --default-border-radius: 1.2rem;
+
+  --color-pink: #ff5678;
+  --color-cyan: #35e6e9;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+aside {
+	grid-area: hero;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+aside h1 {
+	font-size: 6.4rem;
+}
+
+span.rosa {
+	color: var(--color-pink);
+}
+
+main {
+  position: relative;
+	grid-area: form;
+	width: 60rem;
+	height: 52rem;
+	border: var(--default-border);
+	border-radius: var(--default-border-radius);
+	padding: 4.4rem 5.7rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.content {
+	height: 100vh;
+
+	display: grid;
+	grid-template-areas:
+		". . . . ."
+		". hero . form ."
+		". hero . form ."
+		". . . . .";
+	justify-content: center;
+	align-items: center;
+	gap: 8.5rem 2rem;
+}
+
+a {
+	transition: opacity 0.1s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+main h2 {
+	max-width: 43rem;
+	font-size: 3.6rem;
+	font-weight: 500;
+}
+
+main .botoes {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+main .botoes a {
+	height: 5.5rem;
+  width: 48.9rem;
+
+	text-decoration: none;
+	font-size: 2.4rem;
+
+	color: #fff;
+	background-color: var(--color-cyan);
+	border-radius: var(--default-border-radius);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: calc(5.4rem - 1.2rem);
+}
+
+main header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 0 1.8rem;
+}
+
+main header a .fa-angle-left {
+  color: var(--color-pink);
+  font-size: 2.4rem;
+}
+
+main form label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: lowercase;
+
+  display: block;
+  margin-bottom: 1rem;
+}
+
+main form {
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+main form :is(input, select) {
+  width: 48.9rem;
+  height: 5.5rem;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+
+  background: #fff;
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+}
+
+main form select {
+  appearance: none;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+}
+
+main form .select-div {
+  position: relative;
+}
+
+.fa-angle-down {
+  position: absolute;
+  top: 5rem;
+  left: 45rem;
+
+  font-size: 2.2rem;
+  color: var(--color-cyan);
+}
+
+.alternativa {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  font-size: 1.8rem;
+}
+
+.alternativa p {
+  margin-top: 1.2rem;
+  font-weight: 700;
+}
+
+.alternativa a {
+  text-decoration: none;
+  color: var(--color-pink);
+  margin-bottom: 1.2rem;
+}
