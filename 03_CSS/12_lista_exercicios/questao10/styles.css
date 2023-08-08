@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header img {
+  max-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  padding: 0 3rem;
+}
+
+.find-out {
+  min-height: 25vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-out h2 {
+  margin: 2.4rem 0;
+  font-size: 3.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.find-out > i {
+  font-size: 5rem;
+}
+
+.description {
+  font-size: 3.2rem;
+  margin: 5rem 0 12rem;
+
+  display: flex;
+  gap: 0 1.5rem;
+}
+
+.action-button-div {
+  text-align: center;
+  margin: 0rem 0 4.5rem;
+}
+
+.action-button-div button {
+  border-radius: .4rem;
+  padding: 1rem 8rem;
+  font-size: 3.6rem;
+  color: #fff;
+  border: none;
+  background-color: #00bbf9;
+}
+
+header {
+  position: relative;
+  z-index: -1;
+  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  content: '';
+  background-color: #000;
+  opacity: .6;
+
+  /* posiciona nos limites do elemento pai */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+header::after {
+  content: 'O mundo como você nunca viu';
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 9rem;
+  font-weight: 900;
+
+  position: absolute;
+  left: 3rem;
+  top: calc(27rem / 2);
+  z-index: 1;
+
+  max-width: 30rem;
+  height: 8rem;
+  line-height: 7rem;
+}
+
+@keyframes jump {
+  0% {
+    position: relative;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+.fa-angles-down {
+  font-size: 5rem;
+  animation: jump 2s alternate infinite ease-in-out;
+}
