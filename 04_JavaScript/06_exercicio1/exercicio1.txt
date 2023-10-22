@@ -1,0 +1,85 @@
+07. Exercício I
+
+Questão 1 ~ Resposta correta
+Qual dessas linhas de código é um comando JavaScript válido para declarar uma variável que armazenará a idade mínima, inicializando-a com o valor 18?
+  (X) var idadeMinima = 18;
+  ( ) var idadeMinina == 18;
+  ( ) var idade minima = 18;
+  ( ) var idadeMinima <- 18;
+  ( ) int idadeMinima = 18;
+
+Questão 2 ~ Resposta correta
+Após as seguintes declarações, os tipos de dados das variáveis w, x, y e z são, respectivamente:
+
+var w = '';
+var x;
+var y = undefined;
+var z = 0;
+
+  ( ) string, null, undefined, number
+  (X) string, undefined, undefined, number
+  ( ) null, null, undefined, null
+  ( ) char, undefined, undefined, object
+  ( ) null, undefined, undefined, null
+
+Questão 3 ~ Resposta correta
+Com base no código abaixo, o que será exibido no console?
+
+var x = 10;
+console.log(x + y);
+let y = 15;
+
+  ( ) 10
+  ( ) undefined.
+  ( ) null.
+  ( ) 25
+  (X) Será exibido um erro, pois variáveis declaradas com let não sofrem elevação de escopo(hoisting).
+
+Questão 4 ~ Resposta correta
+O resultado das expressões booleanas abaixo serão, respectivamente:
+
+0 <= 0
+1 < 1
+-2 > -22
+-22 > 0
+
+  ( ) true, true, false, false
+  ( ) true, false, true, true
+  (X) true, false, true, false
+  ( ) false, true, false, true
+  ( ) false, true, false, false
+
+Questão 5 ~ Resposta correta
+Qual outra afirmação é equivalente a essa:
+
+x < 42 || x > 42 ?
+
+  ( ) x < 42 && x > 42
+  ( ) x === 42
+  ( ) x < 42 && x >= 43
+  ( ) !x < 42
+  (X) x !== 42
+
+Questão 6 ~ Resposta correta
+Qual mensagem será mostrada quando o código abaixo for executado?
+
+if (50 > 100) {
+  console.log("Falta um tanto");
+} else {
+  if ("1" == "-1") {
+    console.log("Quase lá");    
+  }
+
+  if (!null) {
+    console.log("Sucesso");
+  }
+}
+
+  ( ) "Falta um tanto"
+  ( ) "No caminho"
+  ( ) "Quase lá"
+  (X) "Sucesso" // o contrário de null é true
+  ( ) Nenhuma mensagem será exibida.
+
+PONTUAÇÃO: 6 (100%)
+Você acertou 6 de 6 questões.
