@@ -4,10 +4,10 @@ import "../assets/meuContador.css"
 
 export default function MeuContador(props) {
   const [contador, setContador] = useState(0);
-  
-  function aumentar() {setContador(contador + props.intervalo)}
-  function diminuir() {setContador(contador - props.intervalo)}
-  
+
+  function aumentar() { setContador(contador + props.intervalo) }
+  function diminuir() { setContador(contador - props.intervalo) }
+
   return (
     <div className="container-contador">
       <h1>Meu contador ({props.intervalo})</h1>

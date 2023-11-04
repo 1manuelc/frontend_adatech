@@ -11,7 +11,7 @@ export default function App() {
 			<MeuBotao conteudo='depois aqui' />
 			<MeuBotao conteudo='e por fim aqui' idade={2} />
 			<MeuContador intervalo={1} />
-      <MeuContador intervalo={10} />
+			<MeuContador intervalo={10} />
 		</div>
 	);
 }
