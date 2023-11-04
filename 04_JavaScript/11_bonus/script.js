@@ -1,0 +1,1 @@
+alert("script integrado com sucesso!")
