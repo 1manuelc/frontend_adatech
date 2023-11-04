@@ -1,0 +1,24 @@
+01. ESTADOS E EVENTOS
+
+Hooks (ganchos, em tradução livre) são formas de atualizar componentes de forma intencional se baseando em eventos no React-DOM (um DOM semelhante ao do JavaScript, mas virtualizado).
+
+São features importáveis de "react" capazes de definir e ficar atentas á estados mutáveis dentro da página.
+
+Como exemplo, temos "MeuContador.jsx" que importa o Hook "useState" de "react"
+
+* useState
+  Se trata de um React Hook para manipular variáveis dentro de um componente através de interações no DOM (onClick por exemplo).
+
+  Usando desestruturação de arrays capturamos o Array retornado por useState, que contém dois elementos:
+    - um valor
+    - uma função para alterá-lo
+  (por convenção nomeamos a desestruturação como: [algo, setAlgo])
+
+  Assim, utilizamos um evento onClick chamando funções aumentar e diminuir dentro do HTML, dentro delas implementamos a função de alteração.
+
+    function aumentar() {setContador(contador + props.intervalo)}
+    function diminuir() {setContador(contador - props.intervalo)}
+
+    (Essa função de alteração funciona como qualquer outra, mas a diferença-chave está no fato do React estar atento nela e renderizar o componente novamente após a interação com o DOM que chama ela)
+
+  Aproveitei para utilizar o conceito de props passado na aula anterior

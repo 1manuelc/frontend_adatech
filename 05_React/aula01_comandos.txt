@@ -1,0 +1,16 @@
+01. Para criar a pasta do projeto, nomeá-la e selecionar a biblioteca React e a linguagem desejada.
+  npm create vite
+    -> cria as dependências, baixa e organiza arquivos necessários para o desenvolvimento do projeto.
+
+02. Para rodar o projeto depois de construído
+  cd ./pasta-do-projeto
+    -> entra na pasta do projeto
+  
+  npm i
+    -> executa a instalação de dependências necessárias
+  
+  npm run dev
+    -> inicializa os componentes e dependências á partir de um projeto-padrão totalmente modificável, além de rodar um servidor local (como o live server) com a(s) página(s) desenvolvidas.
+
+  code .
+    -> abre o diretório atual (do projeto) dentro do vscode

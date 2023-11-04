@@ -1,0 +1,44 @@
+01. COMPONENTES
+
+Componentes são funções (método atual) ou classes (método antigo) exportadas de um arquivo .jsx para dentro de outro, de forma a compor uma estrutura simplificada e reutilizável.
+
+Nesses componentes (que devem ser criados com nome em letra inicial maiúscula e camel case), exportamos uma função que tem como retorno um código HTML + Javascript (disso se trata a extensão .jsx).
+
+Perceba que todos com exceção de App e Main são criados dentro de src/components dentro de um único .jsx para melhor organização.
+
+A sintaxe otimizada de implementação de componente é:
+  export default function MeuComponente(props) {
+    return (
+      // bloco de código aqui
+    )
+  }
+
+Vale lembrar que os componentes menores compõem os maiores, assim como "MeuComponente" está dentro de App por meio de uma importação:
+  import MeuComponente from "...diretorio"
+
+Dentro do bloco de retorno de App, chamamos nosso sub-componente MeuComponente através da sintaxe:
+  <MeuComponente/>
+É como se criássemos uma tag importável cheia de estruturas dentro, o que facilita a reutilização e manutenção de código.
+
+
+02. PROPS
+
+Props são uma forma de passar "parâmetros" para dentro do componente logo na sua declaração dentro de App.
+Através de palavras chave na declaração, um objeto é repassado para o componente a ser criado, podendo acessar as propriedades/parâmetros dados pela sintaxe de objetos.
+
+Dentro de App:
+  <MeuBotao conteudo="Clique aqui" idade={2}/> // em trechos de código com Javascript dentro do .jsx utilizamos chaves
+
+Dentro de MeuBotao:
+  obs: Logicamente devemos colocar o parâmetro props na declaração da função, para receber o objeto repassado
+    export default function MeuComponente(props) {...}
+
+  Dentro do componente:
+    return (
+      <button>{props.conteudo}</button>
+    )
+
+    // uma forma alternativa para formatar
+    return (
+      <button>String(`${props.conteudo} ${props.idade}`)</button>
+    )
