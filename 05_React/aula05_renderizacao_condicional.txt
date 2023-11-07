@@ -1,0 +1,28 @@
+01. RENDERIZAÇÃO CONDICIONAL
+
+Como benefício de usarmos HTML + Javascript em um único arquivo, podemos renderizar elementos conforme condições específicas.
+
+Usando operadores condicionais como operador ternário e if()/else, podemos fracionar renderizações específicas conforme elementos do DOM (como variáveis e estados na página).
+
+Operador ternário: dentro do retorno
+  return (
+      <div className="container-contador">
+        ...
+
+        {contador >= 10 ? <p>Valor muito alto</p> : null}
+        {contador <= 0 ? <p>Valor muito baixo</p> : null}
+      </div>
+    )
+
+if()/else: condiciona um retorno
+  if (contador >= 30) {
+    return (
+      <div className="container-contador">
+        <h1>Meu contador ({props.intervalo})</h1>
+        <button onClick={diminuir}>-</button>
+        <h3>{contador}</h3>
+        <button onClick={aumentar}>+</button>
+        <p>Valor extremamente alto!</p>
+      </div>
+    )
+  }

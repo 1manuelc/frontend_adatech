@@ -1,0 +1,39 @@
+01. EFEITOS COLATERAIS
+
+"Efeitos colaterais" nada mais são do que interações do usuário monitoradas pelo React que desencadeiam novas renderizações de um componentes.
+
+Utilizamos o hook "useEffect()" para definir qual efeito terá a interação do usuário.
+
+A sintaxe de useEffect() se trata de:
+  useEffect(() => {setup}, [dependences])
+
+Passamos um método (anônimo ou não) para alterar elementos contidos no código, e apontamos em um array de dependências o que deverá ser monitorado e causar re-renderizações.
+
+Dica: use a menor quantidade possível de efeitos colaterais por componente, delimitando bem suas dependências para não lotar a memória do usuário da página.
+
+Geralmente utilizamos o useEffect() com dependências apontadas ou com o array vazio para rodar essa efeito somente no carregamento inicial da página.
+
+Para disparar um useEffect(), foi utilizado no exemplo um evento DOM dentro de um input de texto, disparado pela mudança do campo "onChange" com outro hook, useState().
+(a constante "pesquisa" alterada pelo useState é monitorada pelo useEffect, por isso há re-renderização)
+
+  <input
+    id="campo-pesquisa"
+    type="text"
+    placeholder="pesquise aqui"
+    value={pesquisa}
+    onChange={(evento) => setPesquisa(evento.target.value)}
+  />
+
+  useEffect(() => {
+    if (pesquisa) {
+      const novaLista = minhaLista.filter((item) => {
+        return item.value.toLowerCase().includes(pesquisa.toLowerCase())
+      })
+      setProdutos(novaLista)
+    } else {
+      setProdutos(minhaLista)
+    }
+  }, [pesquisa])
+
+Este useEffect altera a lista de produtos visível através de correspondência do input de texto com seus itens.
+A condição inicial valida se a constante pesquisa não está vazia, mostrando assim a lista padrão de produtos.

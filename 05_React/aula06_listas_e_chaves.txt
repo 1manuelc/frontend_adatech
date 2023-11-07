@@ -1,0 +1,36 @@
+01. LISTAS E CHAVES
+
+Em HTML puro, utilizamos listas através das tags <ul> e <ol> com <li>'s dentro, em React podemos retornar tags repetidas sequencialmente como listas de elementos.
+
+A diferença vital é que React pede um atributo para identificar cada elemento, chamado "key". 
+
+Se trata de um identificador numérico, para que a bibloteca consiga mapear os elementos e renderizar de forma performática e inteligente.
+
+Exemplo1: retornando listas de elementos com keys
+  return (
+    <div>
+      <h4 key={1}>Macarrão</h4>
+      <h4 key={2}>Arroz</h4>
+      <h4 key={3}>Feijão</h4>
+    </div>
+  )
+
+Mas existem formas mais inteligentes e de fácil manutenção para retornar listas de elementos (imagens, números, links), que são muito comuns nos sites atuais.
+
+Exemplo2: criando um Array de Objetos e depois mapeando-o.
+  const minhaLista = [
+    { id: 1, value: "Macarrão"},
+    { id: 2, value: "Arroz"},
+    { id: 3, value: "Feijão"}
+  ]
+
+  return minhaLista.map((item) => {
+    return (
+      <div key={item.id}>
+        <h4>{item.value}</h4>
+      </div>
+    )
+  })
+
+  Neste exemplo, utilizamos o método map para desestruturar os Objetos do Array declarado fora do retorno.
+  Note que retornamos para cada Objeto do Array uma div com a chave contida em item.id e o conteúdo em um h4 interno com item.value.

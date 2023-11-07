@@ -1,0 +1,25 @@
+01. ESTILIZAÇÃO COM CLASSES E CSS MODULES
+
+Para estilizar um componente, basta criar um arquivo css correspondente e importá-lo dentro do mesmo, usando nomes de classes e id's iguais.
+
+Para estilizar de forma reutilizável, utilizamos CSS Modules, estilizações específicas para elementos aplicadas por classe.
+
+O arquivo "elemento.module.css" deve conter classes que devem ser apontadas no .jsx para estilização.
+
+Exemplo:
+  (MeuContador.jsx)
+  import styles from "../assets/contador.module.css"
+
+  <div className={styles.containerContador}>
+    {...}
+  </div>
+
+  (contador.module.css)
+  .containerContador {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+Resumindo, no .jsx puxamos a estilização por uma constante styles.nomeDaClasse
+
